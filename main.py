@@ -22,7 +22,7 @@ while True:
     val_value = pixel_center[2]
 
     color = "Undefined"
-    if (val_value == 0) and (sat_value <= 255) and (hue_value <=255):
+    if (val_value == 0) and (sat_value <= 255) and (hue_value <= 255):
         color = "BLACK"
         s = gTTS(text="Black", lang='en')
         tsname = "name.mp3"
@@ -33,7 +33,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value <= 255) and (sat_value <= 50) and (val_value >= 210 and val_value <= 255):
+    elif (val_value == 255):
         color = "WHITE"
         s = gTTS(text="White", lang='en')
         tsname = "name.mp3"
@@ -44,7 +44,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value <= 5) and (sat_value <= 100) and (val_value >= 180 and val_value <= 255):
+    elif (hue_value <= 5) :
         color = "RED"
         s = gTTS(text="Red", lang='en')
         tsname = "name.mp3"
@@ -55,7 +55,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 5 and hue_value <= 17) and (sat_value >=150 and sat_value <= 255) and (val_value >= 200 and val_value <= 255):
+    elif (hue_value >= 6 and hue_value <= 16) :
         color = "ORANGE"
         s = gTTS(text="Orange", lang='en')
         tsname = "name.mp3"
@@ -66,7 +66,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 17 and hue_value <= 37) and (sat_value >= 110 and sat_value <= 180) and (val_value >= 220 and val_value <= 255):
+    elif (hue_value >= 17 and hue_value <= 40) :
         color = "YELLOW"
         s = gTTS(text="Yellow", lang='en')
         tsname = "name.mp3"
@@ -77,7 +77,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 38 and hue_value <= 48) and (sat_value >= 140 and sat_value <= 190) and (val_value >= 230 and val_value <= 255):
+    elif (hue_value > 40 and hue_value <= 50):
         color = "LIME GREEN"
         s = gTTS(text="Lime Green", lang='en')
         tsname = "name.mp3"
@@ -88,7 +88,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 48 and hue_value < 70) and (sat_value >= 225 and sat_value <= 255) and (val_value >= 220 and val_value <= 255) :
+    elif (hue_value > 50 and hue_value < 77) :
         color = "GREEN"
         s = gTTS(text="Green", lang='en')
         tsname = "name.mp3"
@@ -99,18 +99,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif hue_value > 77 and hue_value < 98:
-        color = "SKY BLUE"
-        s = gTTS(text="Sky Blue", lang='en')
-        tsname = "name.mp3"
-        s.save(tsname)
-
-        music = pyglet.media.load(tsname, streaming=False)
-        music.play()
-
-        time.sleep(music.duration)
-        os.remove(tsname)
-    elif (hue_value > 80 and hue_value < 100) and (sat_value >= 70 and sat_value <= 200) and (val_value >= 245 and val_value <= 255):
+    elif (hue_value > 77 and hue_value < 103) :
         color = "LIGHT BLUE"
         s = gTTS(text="Light Blue", lang='en')
         tsname = "name.mp3"
@@ -121,7 +110,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 102 and hue_value < 126) and (sat_value >= 225 and sat_value <= 255) and (val_value >= 35 and val_value <= 255):
+    elif (hue_value > 103 and hue_value < 125):
         color = "DARK BLUE"
         s = gTTS(text="Dark Blue", lang='en')
         tsname = "name.mp3"
@@ -132,9 +121,9 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 140 and hue_value < 150) and (sat_value >= 80 and sat_value <= 255) and (val_value >= 150 and val_value >= 210):
-        color = "VIOLET"
-        s = gTTS(text="Violet", lang='en')
+    elif (hue_value > 125 and hue_value < 150):
+        color = "PURPLE"
+        s = gTTS(text="Purple", lang='en')
         tsname = "name.mp3"
         s.save(tsname)
 
@@ -143,7 +132,7 @@ while True:
 
         time.sleep(music.duration)
         os.remove(tsname)
-    elif (hue_value > 155 and hue_value < 172) and (sat_value >= 100 and sat_value <= 255) and (val_value >= 220 and val_value <= 255):
+    elif (hue_value > 150 and hue_value < 174) :
         color = "PINK"
         s = gTTS(text="Pink", lang='en')
         tsname = "name.mp3"
