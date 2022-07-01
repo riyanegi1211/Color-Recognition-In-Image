@@ -11,3 +11,8 @@ This project is a `python-based` application which detects the color from a live
 
 ## Flowchart of complete project
 ![Flowchart (dark)](https://user-images.githubusercontent.com/58062535/152655848-c12c71bb-be99-4dd6-a96f-be57b36967ec.jpeg)
+
+## Team Members
+[Riya Negi](https://github.com/riyanegi1211)
+
+[Mohak Kala](https://github.com/MohakKala07)
